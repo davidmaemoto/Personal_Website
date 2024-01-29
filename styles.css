@@ -38,14 +38,17 @@ header img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
     cursor: pointer;
-    transition: background-color 0.3s; /* Add smooth transition */
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .project-card:hover {
     background-color: #f0f0f0; /* Light highlight color on hover */
+    transform: scale(1.1);
 }
+
 .project-icon {
     width: 50px;
     height: 50px;
@@ -68,9 +71,14 @@ header img {
     margin-top: 20px;
 }
 
+.contact-icons a:hover {
+    transform: scale(1.1);
+}
+
 .contact-icons a {
     margin: 0 10px; /* Adjust spacing between icons */
     cursor: pointer; /* Change cursor to pointer */
+    transition: transform 0.3s;
 }
 
 .contact-icons img {
